@@ -20,15 +20,26 @@ Next use this command
 
 ```
 composer install
-npm install
-gulp
 ```
-
-Next make sure to create a new database and add your database credentials to your .env file:
+Rename `.env.example` to `.env` and next make sure to create a new database and add your database credentials to your `.env` file:
 
 ```
 DB_HOST=localhost
 DB_DATABASE=homestead
 DB_USERNAME=homestead
 DB_PASSWORD=secret
+```
+and nex step
+```
+npm install
+npm install hammerjs vue-async-data materialize-css
+gulp
+php artisan voyager:install
+```
+
+And we're all good to go!
+Login in admin
+```
+**email:** admin@admin.com
+**password:** password
 ```
